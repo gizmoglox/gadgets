@@ -15,8 +15,10 @@
 * { box-sizing:border-box; }
 body { margin:0; background:var(--bg); color:var(--text);
        font-family:-apple-system,"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif; line-height:1.6; }
+a { color:inherit; }
 header { max-width:1080px; margin:0 auto; padding:28px 16px 8px; }
 h1 { font-size:1.4rem; margin:0 0 4px; }
+.lead { margin:0 0 4px; }
 .pr { font-size:.8rem; color:var(--sub); margin:0; }
 main { max-width:1080px; margin:0 auto; padding:16px; display:grid; gap:16px;
        grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); }
@@ -33,14 +35,24 @@ article img { width:100%; aspect-ratio:1/1; object-fit:contain; background:#fff;
 .links a.amazon { background:#232f3e; }
 .empty { color:var(--sub); }
 footer { max-width:1080px; margin:0 auto; padding:16px 16px 40px; font-size:.75rem; color:var(--sub); }
+footer nav { display:flex; flex-wrap:wrap; gap:6px 14px; margin-bottom:8px; }
+.doc { max-width:760px; margin:0 auto; padding:8px 16px 24px; display:block; }
+.doc h2 { font-size:1.05rem; margin:28px 0 6px; padding-bottom:4px; border-bottom:1px solid var(--line); }
+.doc p, .doc li { font-size:.92rem; }
 </style>
 </head>
 <body>
 <header>
   <h1>GIZMO GLOX | 世界のバズガジェット</h1>
+  <p class="lead">国内外のニュースで話題になったガジェットを、毎日紹介しています。</p>
   <p class="pr">【PR】当ページはアフィリエイト広告を利用しています。価格・ポイント・セール情報は記載時点のもので、変わることがあります。</p>
 </header>
 <main>
+<article><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/happylifestyleshop/cabinet/08251244/12448042/4943765066927.jpg?_ex=1080x1080" alt="☆ Logicool ロジクール ワイヤレスモバイルマウス MF900OW オフホワイト Mobi Fold 超薄型＆軽量 アダプティブタッチスクロール 79g 超高速のナビゲーションが可能 折りたたみ式 スムーズで精確なスクロール 送料無料 更に割引クーポン" loading="lazy"><div class="body">
+  <div class="meta">2026-10-21 #ガジェット</div>
+  <p class="text">ロジクールの折りたたみマウス「Mobi Fold」。ポーチに入れっぱなしにできるコンパクトさで、外出先の作業を身軽にしてくれそうです🖱️</p>
+  <div class="links"><a class="rakuten" href="https://hb.afl.rakuten.co.jp/hgc/g00t5uko.l05tq4b9.g00t5uko.l05trafd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhappylifestyleshop%2Fmix8m-191-2%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fhappylifestyleshop%2Fi%2F10140617%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored noopener" target="_blank">楽天で見る</a></div>
+</div></article>
 <article><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/vermicular-rshop/cabinet/biiino/item/main-image/20261021131754_1.jpg?_ex=1080x1080" alt="バーミキュラ ウォック 中華鍋 中華料理 鋳物 深型 30cm" loading="lazy"><div class="body">
   <div class="meta">2026-10-21 #中華鍋</div>
   <p class="text">バーミキュラ初の中華鍋「VERMICULAR WOK」が登場🍳 炒め・揚げ・蒸しに対応。11月4日に一部取扱店で発売予定です。</p>
@@ -283,7 +295,8 @@ footer { max-width:1080px; margin:0 auto; padding:16px 16px 40px; font-size:.75r
 </div></article>
 </main>
 <footer>
-  最終更新: 2026-10-21 14:01
+  <nav><a href="https://bsky.app/profile/gizmoglox.bsky.social" rel="noopener" target="_blank">Bluesky</a><a href="https://x.com/Gizmoglox" rel="noopener" target="_blank">X</a><a href="https://www.threads.com/@gizmoglox" rel="noopener" target="_blank">Threads</a><a href="https://www.instagram.com/gizmoglox/" rel="noopener" target="_blank">Instagram</a><a href="privacy.html">このサイトについて・プライバシーポリシー</a></nav>
+  最終更新: 2026-10-21 15:01
 </footer>
 <script>
 // 終了したセール情報は表示しない
