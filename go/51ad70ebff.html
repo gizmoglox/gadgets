@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>楽天市場へ移動します</title>
+<style>
+:root { --bg:#f6f6f4; --card:#fff; --text:#1d1d1f; --sub:#6e6e73; --accent:#bf0000; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161617; --card:#232325; --text:#f2f2f2; --sub:#a1a1a6; } }
+body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Hiragino Sans",sans-serif; }
+main { max-width:480px; margin:40px auto; padding:24px 16px; background:var(--card); border-radius:12px; }
+h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:var(--sub); font-size:.85rem; }
+.btn { display:block; text-align:center; padding:14px; margin:12px 0; border-radius:10px; text-decoration:none;
+       border:1px solid var(--accent); color:var(--accent); font-weight:bold; }
+.btn.primary { background:var(--accent); color:#fff; }
+</style></head><body><main>
+<p class="sub">PR(楽天アフィリエイト)</p>
+<h1>楽天市場のページへ移動します</h1>
+<p>【P10倍×ワンダフルデー限定】インバーター 車載コンセント カーインバーター DC12V/AC110V 車 シガーソケット ACコンセント2口 USB 3ポート Type-C 1ポート 200W 電</p>
+<p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
+<a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
+<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00qff7o.l05tq409.g00qff7o.l05tr1d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhobinavi%2Finv001-rd%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fhobinavi%2Fi%2F10586179%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
+</main>
+<script>
+var url = "https://hb.afl.rakuten.co.jp/hgc/g00qff7o.l05tq409.g00qff7o.l05tr1d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhobinavi%2Finv001-rd%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhobinavi%2Fi%2F10586179%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
+  location.replace(url);  // アプリ内ブラウザでなければ待たせない
+} else {
+  var ext = document.getElementById("ext");
+  if (/Android/i.test(ua)) {
+    ext.href = "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url="
+      + encodeURIComponent(url) + ";end";
+  } else if (/iPhone|iPad|iPod/i.test(ua)) {
+    ext.href = "x-safari-" + url;
+  }
+  if (ext.getAttribute("href")) { ext.hidden = false; document.getElementById("hint").hidden = false; }
+  var n = 5, sec = document.getElementById("sec");
+  document.getElementById("count").hidden = false;
+  var timer = setInterval(function () {
+    n -= 1; sec.textContent = n;
+    if (n <= 0) { clearInterval(timer); location.href = url; }
+  }, 1000);
+  ext.addEventListener("click", function () { clearInterval(timer); });
+}
+</script></body></html>
