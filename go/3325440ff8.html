@@ -16,11 +16,13 @@ h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:va
 <p>☆サンコー コンパクトコーヒーロースター ロイジー 焙煎したての新鮮な風味を自宅で味わえる家庭用焙煎機 PRSC25HBK</p>
 <p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
 <a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
-<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00pmo9o.l05tq75c.g00pmo9o.l05trbaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnf%2Fao-4580060603145%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fnf%2Fi%2F12395173%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<a id="direct" class="btn" rel="sponsored">このまま開く</a>
+<noscript><p class="sub">移動するには JavaScript を有効にしてください。</p></noscript>
 <p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
 </main>
 <script>
-var url = "https://hb.afl.rakuten.co.jp/hgc/g00pmo9o.l05tq75c.g00pmo9o.l05trbaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnf%2Fao-4580060603145%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnf%2Fi%2F12395173%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+var url = atob("aHR0cHM6Ly9oYi5hZmwucmFrdXRlbi5jby5qcC9oZ2MvZzAwcG1vOW8ubDA1dHE3NWMuZzAwcG1vOW8ubDA1dHJiYWEvP3BjPWh0dHBzJTNBJTJGJTJGaXRlbS5yYWt1dGVuLmNvLmpwJTJGbmYlMkZhby00NTgwMDYwNjAzMTQ1JTJGJm09aHR0cCUzQSUyRiUyRm0ucmFrdXRlbi5jby5qcCUyRm5mJTJGaSUyRjEyMzk1MTczJTJGJnJhZmNpZD13c2NfaV9pc182MzJmM2JhZi1iNjVlLTQ5NTItYWIwYi03ZWQzZmI1NGFlM2M="), ua = navigator.userAgent;
+document.getElementById("direct").href = url;
 if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
   location.replace(url);  // アプリ内ブラウザでなければ待たせない
 } else {

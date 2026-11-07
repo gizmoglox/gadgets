@@ -16,11 +16,13 @@ h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:va
 <p>【11/1限定★抽選で最大100%ポイントバック！(要エントリー)】Meze Audio ALBA S 有線イヤホン 密閉型 カナル型 耳掛け型 リケーブル対応 着脱式ケーブル 2pin 3.5mmス</p>
 <p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
 <a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
-<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00qjy0o.l05tqf2d.g00qjy0o.l05trb01/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-earphone%2F698596029279%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-earphone%2Fi%2F10041478%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<a id="direct" class="btn" rel="sponsored">このまま開く</a>
+<noscript><p class="sub">移動するには JavaScript を有効にしてください。</p></noscript>
 <p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
 </main>
 <script>
-var url = "https://hb.afl.rakuten.co.jp/hgc/g00qjy0o.l05tqf2d.g00qjy0o.l05trb01/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-earphone%2F698596029279%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-earphone%2Fi%2F10041478%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+var url = atob("aHR0cHM6Ly9oYi5hZmwucmFrdXRlbi5jby5qcC9oZ2MvZzAwcWp5MG8ubDA1dHFmMmQuZzAwcWp5MG8ubDA1dHJiMDEvP3BjPWh0dHBzJTNBJTJGJTJGaXRlbS5yYWt1dGVuLmNvLmpwJTJGZS1lYXJwaG9uZSUyRjY5ODU5NjAyOTI3OSUyRiZtPWh0dHAlM0ElMkYlMkZtLnJha3V0ZW4uY28uanAlMkZlLWVhcnBob25lJTJGaSUyRjEwMDQxNDc4JTJGJnJhZmNpZD13c2NfaV9pc182MzJmM2JhZi1iNjVlLTQ5NTItYWIwYi03ZWQzZmI1NGFlM2M="), ua = navigator.userAgent;
+document.getElementById("direct").href = url;
 if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
   location.replace(url);  // アプリ内ブラウザでなければ待たせない
 } else {

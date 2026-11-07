@@ -16,11 +16,13 @@ h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:va
 <p>【P10倍★11日9:59迄】セラミックヒーター 速暖 人感センサー 大風量 省エネ 小型 軽量 コンパクト 足元 ファンヒーター 電気 リビング キッチン 寝室 洗面所 脱衣所 暖房 暖房器具 セラ</p>
 <p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
 <a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
-<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00qvevo.l05tq995.g00qvevo.l05tr485/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkadenrand%2F561002%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkadenrand%2Fi%2F10072504%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<a id="direct" class="btn" rel="sponsored">このまま開く</a>
+<noscript><p class="sub">移動するには JavaScript を有効にしてください。</p></noscript>
 <p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
 </main>
 <script>
-var url = "https://hb.afl.rakuten.co.jp/hgc/g00qvevo.l05tq995.g00qvevo.l05tr485/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkadenrand%2F561002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkadenrand%2Fi%2F10072504%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+var url = atob("aHR0cHM6Ly9oYi5hZmwucmFrdXRlbi5jby5qcC9oZ2MvZzAwcXZldm8ubDA1dHE5OTUuZzAwcXZldm8ubDA1dHI0ODUvP3BjPWh0dHBzJTNBJTJGJTJGaXRlbS5yYWt1dGVuLmNvLmpwJTJGa2FkZW5yYW5kJTJGNTYxMDAyJTJGJm09aHR0cCUzQSUyRiUyRm0ucmFrdXRlbi5jby5qcCUyRmthZGVucmFuZCUyRmklMkYxMDA3MjUwNCUyRiZyYWZjaWQ9d3NjX2lfaXNfNjMyZjNiYWYtYjY1ZS00OTUyLWFiMGItN2VkM2ZiNTRhZTNj"), ua = navigator.userAgent;
+document.getElementById("direct").href = url;
 if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
   location.replace(url);  // アプリ内ブラウザでなければ待たせない
 } else {

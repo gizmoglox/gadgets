@@ -16,11 +16,13 @@ h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:va
 <p>【ふるさと納税】 ＼総合1位獲得／ 近江牛 入り ハンバーグ 6kg 3kg 2kg 1kg 淡路島産 玉ねぎ 近江牛 使用 合挽き 近江牛 200g/30個15個10個5個 選べる容量 個包装 和牛</p>
 <p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
 <a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
-<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00teooo.l05tqeaf.g00teooo.l05tr4e2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff253847-ryuo%2Frm001%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Ff253847-ryuo%2Fi%2F10001383%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<a id="direct" class="btn" rel="sponsored">このまま開く</a>
+<noscript><p class="sub">移動するには JavaScript を有効にしてください。</p></noscript>
 <p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
 </main>
 <script>
-var url = "https://hb.afl.rakuten.co.jp/hgc/g00teooo.l05tqeaf.g00teooo.l05tr4e2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff253847-ryuo%2Frm001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff253847-ryuo%2Fi%2F10001383%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+var url = atob("aHR0cHM6Ly9oYi5hZmwucmFrdXRlbi5jby5qcC9oZ2MvZzAwdGVvb28ubDA1dHFlYWYuZzAwdGVvb28ubDA1dHI0ZTIvP3BjPWh0dHBzJTNBJTJGJTJGaXRlbS5yYWt1dGVuLmNvLmpwJTJGZjI1Mzg0Ny1yeXVvJTJGcm0wMDElMkYmbT1odHRwJTNBJTJGJTJGbS5yYWt1dGVuLmNvLmpwJTJGZjI1Mzg0Ny1yeXVvJTJGaSUyRjEwMDAxMzgzJTJGJnJhZmNpZD13c2NfaV9pc182MzJmM2JhZi1iNjVlLTQ5NTItYWIwYi03ZWQzZmI1NGFlM2M="), ua = navigator.userAgent;
+document.getElementById("direct").href = url;
 if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
   location.replace(url);  // アプリ内ブラウザでなければ待たせない
 } else {

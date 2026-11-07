@@ -16,11 +16,13 @@ h1 { font-size:1.1rem; margin:0 0 12px; } p { line-height:1.6; } .sub { color:va
 <p>【ふるさと納税】【総合1位・ジャンル1位】【内容量が選べる】九州産うなぎ蒲焼 国産 うなぎ 蒲焼き 4尾 6尾 鰻蒲焼き 蒲焼き うなぎ蒲焼き 国産うなぎ 特上うなぎ 上うなぎ 小分け パック 化粧箱</p>
 <p id="hint" class="sub" hidden>アプリ内のブラウザでは楽天にログインしていないことがあります。いつものブラウザで開くと、ログインしたまま買い物できます。</p>
 <a id="ext" class="btn primary" hidden>いつものブラウザで開く</a>
-<a class="btn" href="https://hb.afl.rakuten.co.jp/hgc/g00tjs8o.l05tqec5.g00tjs8o.l05trbe2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff452017-miyazaki%2Fm040-001%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Ff452017-miyazaki%2Fi%2F10000645%2F&amp;rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c" rel="sponsored">このまま開く</a>
+<a id="direct" class="btn" rel="sponsored">このまま開く</a>
+<noscript><p class="sub">移動するには JavaScript を有効にしてください。</p></noscript>
 <p id="count" class="sub" hidden><span id="sec">5</span>秒後に、このまま楽天市場へ移動します</p>
 </main>
 <script>
-var url = "https://hb.afl.rakuten.co.jp/hgc/g00tjs8o.l05tqec5.g00tjs8o.l05trbe2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff452017-miyazaki%2Fm040-001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff452017-miyazaki%2Fi%2F10000645%2F&rafcid=wsc_i_is_632f3baf-b65e-4952-ab0b-7ed3fb54ae3c", ua = navigator.userAgent;
+var url = atob("aHR0cHM6Ly9oYi5hZmwucmFrdXRlbi5jby5qcC9oZ2MvZzAwdGpzOG8ubDA1dHFlYzUuZzAwdGpzOG8ubDA1dHJiZTIvP3BjPWh0dHBzJTNBJTJGJTJGaXRlbS5yYWt1dGVuLmNvLmpwJTJGZjQ1MjAxNy1taXlhemFraSUyRm0wNDAtMDAxJTJGJm09aHR0cCUzQSUyRiUyRm0ucmFrdXRlbi5jby5qcCUyRmY0NTIwMTctbWl5YXpha2klMkZpJTJGMTAwMDA2NDUlMkYmcmFmY2lkPXdzY19pX2lzXzYzMmYzYmFmLWI2NWUtNDk1Mi1hYjBiLTdlZDNmYjU0YWUzYw=="), ua = navigator.userAgent;
+document.getElementById("direct").href = url;
 if (!/Instagram|Barcelona|FBAN|FBAV|Twitter|Line\//i.test(ua)) {
   location.replace(url);  // アプリ内ブラウザでなければ待たせない
 } else {
